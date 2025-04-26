@@ -1,0 +1,144 @@
+/* styles.css */
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(to right, #3d394e, #928dab);
+  color: #fff;
+  padding: 10px;
+}
+main{
+  padding: 0px 50px; 
+
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  padding: 0px 50px;
+  
+}
+
+.logo-section {
+  flex: 1;
+  width: 20%;
+  padding-top: 0%;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #00f9ff;
+  padding-top: 0%;
+}
+
+.logo span {
+  color: #ff00ff;
+}
+
+.designation {
+  font-size: 1rem;
+  color: #ddd;
+  margin-top: 5px;
+}
+.profile-section{
+  width: 20%;
+  padding-left: 150px;
+}
+.profile-section .profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+
+
+  border: #ff00ff 3px solid;
+  box-shadow: 0 0 10px #62e166;
+}
+
+.search-bar {
+  width: 60%;
+  margin: 20px 0;
+  /* padding: 0px 50px; */
+  text-align: center;
+}
+
+.search-bar input {
+  width: 90%;
+  max-width: 500px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0 0 10px #fff;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.link-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #ffcb05;
+  border-left: 5px solid #00f9ff;
+  padding-left: 10px;
+}
+
+.link-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+}
+
+.link-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: rgba(141, 249, 129, 0.1);
+  padding: 15px;
+  border-radius: 15px;
+  border: #ff00ff 2px solid;
+  
+  text-decoration: none;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+} 
+
+.link-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+  filter: drop-shadow(0 0 5px #00f9ff);
+}
+
+.link-card:hover {
+  transform: scale(1.05) rotate(1deg);
+  box-shadow: 0 10px 20px rgba(0, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+  header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  .profile-section {
+      align-self: flex-end;
+      margin-top: 10px;
+  }
+}
