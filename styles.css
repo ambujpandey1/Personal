@@ -108,7 +108,7 @@ main {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background: rgba(141, 249, 129, 0.1);
+/*   background: rgba(141, 249, 129, 0.1); */
   padding: 15px;
   border-radius: 15px;
   border: #ff00ff 2px solid;
