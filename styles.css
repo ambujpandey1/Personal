@@ -112,8 +112,7 @@ main {
   padding: 15px;
   border-radius: 15px;
   border: #ff00ff 2px solid;
-  height:60px;
-  width:60px:
+  
   text-decoration: none;
   color: #fff;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
